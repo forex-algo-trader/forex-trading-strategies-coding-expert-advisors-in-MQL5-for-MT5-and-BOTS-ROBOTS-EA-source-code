@@ -1010,6 +1010,9 @@ hr{
     font-weight: bold;
     font-size: auto;
 }
+#footer .title-text{
+    padding-bottom: 20px;
+}
 .wrapper a{
     text-decoration: none;
 }
