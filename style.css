@@ -20,7 +20,7 @@ html{
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)),url(images/banner.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 110vh;
 }
 .container-preloader{
     position: relative;
@@ -202,8 +202,16 @@ html{
     font-size: 20px;
     transition: 0.5s;
 }
+@media screen and (max-width:1200px){
+    #banner{
+        height: 140vh;
+    }
+}
 
 @media screen and (max-width:770px){
+    #banner{
+        height: 100vh;
+    }
     .shortcut-contact-icons{
         display: flex;
         padding: auto;
@@ -321,7 +329,9 @@ nav ul li a:hover{
     height: 80px;
     box-shadow: 0px 0px 20px red;
 }
+@media screen and (max-width: 1200px){
 
+}
 @media screen and (max-width: 770px){
     .banner-text{
         padding-top: 100px;
@@ -380,11 +390,11 @@ nav ul li a:hover{
 
 #our-products{
     width: 100%;
-    padding: 0px 0;
+    padding: 90px 0;
 }
 .our-products-row{
     width: auto;
-    margin: auto;
+    margin: auto 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -431,12 +441,18 @@ nav ul li a:hover{
     transform: translateY(-7px); 
     box-shadow: 0 10px 20px 1px blue;
 }
+.our-products-icon-heading a p{
+    font-size: 18px;
+}
 .our-products-text{
     text-align: center;
     color: red;
     text-decoration: none;
     font-weight: bold;
     font-size: auto;
+}
+@media screen and (max-width:1200px){
+
 }
 
 @media screen and (max-width:770px){
@@ -537,7 +553,7 @@ hr{
         margin-bottom: 30px;
     }
      .service—desc p {
-         font—size: 12px;
+         font-size: 12px;
     }
     
     hr{
@@ -560,7 +576,7 @@ hr{
 }
 .title-text{
     text-align: center;
-    padding-bottom: 70px;
+    padding: 70px 0;
 }
 .title-text p{
     margin: auto;
@@ -592,7 +608,7 @@ hr{
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
 }
 .testimonial-col{
@@ -603,6 +619,7 @@ hr{
     box-shadow: 0 10px 20px 3px rgba(0,0,0,0.7);
     cursor: pointer;
     transition: transform .5s;
+    justify-content: space-between;
 }
 .testimonial-col p{
     font-size: 14px;
@@ -677,26 +694,43 @@ hr{
     border-top-left-radius: 35px;
     border-bottom-right-radius: 35px;
 }
+#pdfroom {
+    width: 100%;
+    padding: 70px 0;
+    background-color: darkgrey;
+}
 .title-text h1{
     font-size: 50px;
 }
-.pdfroom_body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.pdfroom-row{
+    width: 80%;
     margin: auto;
-    background-color: whitesmoke;
-    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    display: flex;
+}
+.pdfroom_body{
+    /* width: 95%; */
     border-radius: 11px;
     margin-bottom: 10px;
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px rgba(0,0,0,0.7);
+    cursor: pointer;
+    transition: transform .5s;
+    justify-content: space-between;
+    background-color: #ebebeb;
 }
 .pdfroom_body:hover{
     box-shadow: 0 5px 10px 1.5px red;
     transform: translateY(-11px);
 }
 .pdfroom-container{
-    width: 95%;
-    padding: 5px;
+    width: 100%;
 }
 .pdf_title{
     display: flex;
@@ -710,10 +744,10 @@ hr{
     cursor: pointer;
     color: red;
     transition: 0.5s;
-    transform: translateX(-20px);
+    transform: translateX(-11px);
 }
 .img img{
-    max-width: 197px;
+    max-width: 100%;
     float: left;
     border-radius: 10px;
     margin-right: 20px;
@@ -741,8 +775,11 @@ hr{
         flex-basis: 100%;
         margin-bottom: 1px;
     }
+    .pdfroom-row{
+        flex-direction: column;
+    }
     .img img{
-        max-width: 67px;
+        max-width: 100%;
     }
     .pdf_embed{
         padding: 0px;
@@ -752,17 +789,18 @@ hr{
     }
 }
 
-/////////
+/* ///////// */
 #feature{
     width: 100%;
     padding: 70px 0;
+    background-color: #edf2f2;
 }
 .feature-row{
     width: auto;
-    margin: auto;
+    margin: auto 12px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: stretch;
     flex-wrap: wrap;
     background-color: rgba(0,0,0, 0.5);
     padding: 20px;
@@ -821,7 +859,7 @@ hr{
         font-size: auto;
     }
     .feature-col p{
-        font—size: 12px;
+        font-size: 12px;
     }
     .feature-col:hover {
        bottom: 25% !important;    
@@ -833,7 +871,7 @@ hr{
 #service-recent-works{
     width: 100%;
     padding: 70px 0;
-    background: #efefef;
+    background: #dad6d6;
 }
 .service-recent-works-box{
     width: 100%;
@@ -899,7 +937,7 @@ hr{
         margin-bottom: 30px;
     }
      .service-recent-works-service—desc p {
-         font—size: 12px;
+         font-size: 12px;
     }
     hr{
          margin: 5px auto;
@@ -927,13 +965,14 @@ hr{
     width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-around;
     flex-wrap: wrap;
 }
 .footer-left,.footer-right,.footer-center{
     flex-basis: 30%;
     padding: 10px;
     margin-bottom: 20px;
+    align-items: stretch;
 }
 .footer-right{
     text-align: right;
